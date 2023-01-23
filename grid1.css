@@ -1,0 +1,201 @@
+body{
+    background: #eceaeaea;
+    
+   
+
+}
+.main{
+    font-family:sans-serif;
+    width:999px;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    margin-bottom: 0px;
+    grid-template-areas: "logo      logo      header"
+                         "condunt   condunt   img "
+                         "qts       qts       img"
+                         "btn1      btn2      img" ;
+
+
+}
+.logo a{
+    text-decoration: none;
+    color:rgb(11, 150, 11);
+}
+
+.logo{
+    grid-area: logo ;
+    background:#bae8e8;
+    font-family:sans-serif;
+    padding: 10px ;
+    font-weight:bold ;
+    display:flex;
+    align-items: center;
+    padding-left: 60px;
+    
+}
+.condunt {
+    grid-area: condunt ;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 80px;
+    
+}
+.qts{
+    grid-area: qts;
+    background:#bae8e8; 
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    display: flex;
+    padding-left: 60px;
+    align-items: center;
+}
+.btn1 a{
+    
+    text-decoration: none;
+    color:#fff;
+   
+   
+}
+.btn1:hover{
+    background: rgb(4, 80, 4);
+}
+.btn1{
+    grid-area: btn1 ;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    cursor: pointer ;
+    
+}
+.btn2 a{
+    text-decoration: none;
+    color:#fff ;
+}
+.btn2:hover{
+    background:  rgb(49, 192, 49);
+}
+.btn2{
+    grid-area: btn2 ;
+   background: rgb(12, 163, 12);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   font-weight: bolder;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+header ul li{
+    list-style: none;
+   
+}
+header ul{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding-top: 45px;
+   padding-right: 30px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+   font-weight: bold;
+
+}
+header{
+   grid-area: header ;
+   background: #fff;
+   
+  
+}
+.imge img{
+    grid-area:img ;
+    width: 100%;
+    height: 166.66%;
+    
+}
+
+
+@media (max-width: 767px){
+    .imge{
+    
+
+        width: 200.101%;
+        height: 60%;
+
+    }
+    .main{
+        margin: 0px;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:   "logo     logo"
+                               "header    header"
+                               "img       img"
+                               "condunt   condunt"
+                               "qts       qts"
+                               "btn1      btn2";
+                               grid-template-rows: 100px 50px 200px auto auto 70px ;
+
+    
+    }
+    .logo{
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    header{
+       background: rgb(147, 205, 200);
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+    }
+     .condunt{
+       padding-left: 24px;
+       padding-top:  15px ;
+       padding-bottom: 20px;
+        
+    }
+    .condunt h1{
+        font-size:26px;
+        padding-bottom: 0px;
+     }
+     .condunt p{
+        font-size: 16px;
+        line-height: 18px;
+        font-family: open sans-serif;
+       
+     }
+    .qts{
+        padding: 0px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    body{
+        margin: 0px;
+        
+        
+    }
+
+
+     
+   
+
+}
